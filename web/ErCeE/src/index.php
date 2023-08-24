@@ -1,7 +1,15 @@
 <?php
-$command = $_POST['cmd'] ?? '';  // You should use appropriate input validation/sanitization here
+$command = $_POST['cmd'] ?? ''; 
 
-$output = system("ping " . $command . "-c2");
+function sanitizeString($input) {
+	$pattern = '/\|&/';
+	$sanitized = preg_replace($pattern, '', $input);
+	return $sanitized;
+}
+
+$sanitized = sanitizeString($command);
+
+$output = system("ping " . $sanitized . "-c2");
 
 echo "<pre>$output</pre>";
 ?>
