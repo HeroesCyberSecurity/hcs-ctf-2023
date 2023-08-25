@@ -41,6 +41,8 @@ void vuln(){
     exit(1);
     }
     fgets(secret, SECRETSIZE_MAX, fd);
+    n = strlen(secret);
+    if ( n && secret[n-1] == '\n' ) secret[n-1] = '\0';
 
     printf("Hej! Here's a simple challenge\n\n");
     printf("I will hold a \033[1;36msecret\033[1;0m\n");
@@ -65,7 +67,7 @@ void vuln(){
  
     n = strlen(buffer);
     if ( n && buffer[n-1] == '\n' ) buffer[n-1] = '\0';
-    if(strcmp(buffer, secret) != 0){
+    if(strcmp(buffer, secret) == 0){
         win();
     } else {
         printf("welp, goodluck next time!");

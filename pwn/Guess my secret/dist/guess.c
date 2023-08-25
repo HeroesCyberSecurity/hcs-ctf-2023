@@ -51,7 +51,7 @@ void vuln(){
     /*
         some code, no need to worry about this
     */
-    if(strcmp(buffer, secret) != 0){
+    if(strcmp(buffer, secret) == 0){
         win();
     } else {
         printf("welp, goodluck next time!");
