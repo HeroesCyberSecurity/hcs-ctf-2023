@@ -5,9 +5,18 @@
 #define FLAGSIZE_MAX 64
 
 void win(){
-  /*
-    you win function, no need to worry about the code
-  */
+  char flag[FLAGSIZE_MAX];
+  FILE *fd;
+
+  fd = fopen("flag.txt", "r");
+  if (fd == NULL){
+    printf("%s%s", 
+          "flag.txt not found, please create a flag.txt\n",
+          "if this happened on remote server please contact admin");
+    exit(1);
+  }
+  fgets(flag, 64, fd);
+  printf(flag);
 }
 
 void setup(){
