@@ -34,7 +34,6 @@ void vuln(){
     printf("are you ready? \033[1;36m(yes/no):\033[1;0m ");
     fgets(buffer, 40, stdin);
 
-    // removing newline, conflict when compares
     /*
         some code, no need to worry about this
     */

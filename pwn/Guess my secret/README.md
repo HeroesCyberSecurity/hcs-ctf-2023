@@ -1,4 +1,4 @@
-# Guess my number
+# Guess my Secret
 
 **Author**: HyggeHalcyon
 

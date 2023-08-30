@@ -30,11 +30,11 @@ void vuln(){
         some code, no need to worry about this
     */
     
-    if(target == 0x1337c0de){
-        win();
-    } else {
+    if(target != 0x1337c0de){
         printf("feel free to try again!");
         exit(1); 
+    } else {
+        win();
     }
 }
 
