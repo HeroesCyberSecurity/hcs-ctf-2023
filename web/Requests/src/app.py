@@ -33,7 +33,7 @@ def process_url():
 @app.route("/flag")
 def flag():
     if request.remote_addr == "127.0.0.1":
-        return "HCS{fake_flag}"
+        return "HCS{EsEsErEf_1s_4w3s0m3}"
     else:
         return "Access denied. This endpoint can only be accessed from localhost."
 
