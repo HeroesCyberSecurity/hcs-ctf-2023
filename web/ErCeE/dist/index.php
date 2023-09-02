@@ -2,8 +2,7 @@
 $command = $_POST['cmd'] ?? ''; 
 
 function sanitizeString($input) {
-	$pattern = '/\|&/';
-	$sanitized = preg_replace($pattern, '', $input);
+	$sanitized = str_replace(array('|', '>', '<', '&'), '', $input);
 	return $sanitized;
 }
 
