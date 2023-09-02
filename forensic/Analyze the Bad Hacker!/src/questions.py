@@ -43,7 +43,7 @@ def main():
             return
     
     if correct_answers == len(questions):
-        print("\nCongrats! Flag: HCS{forensik_itu_menyenangkan_bukan?}")
+        print("\nCongrats! Flag: HCS{f0R3n51k_1tu_m3n4rik}")
 
 if __name__ == "__main__":
     main()
