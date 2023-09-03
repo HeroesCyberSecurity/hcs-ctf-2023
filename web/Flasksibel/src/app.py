@@ -3,7 +3,7 @@ import re
 
 app = Flask(__name__)
 
-blacklist = ["os", "popen", "subprocess", "_", "mro", ".", "globals", "locals", "config","builtins", "import"]
+blacklist = ["os", "popen", "subprocess", "_", "mro", ".", "globals", "locals", "config", "builtins", "import"]
 
 def sanitize_input(name):
     for word in blacklist:
