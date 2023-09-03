@@ -4,7 +4,7 @@ Author: abdierryy
 
 Category: Forensic
 
-Flag: `HCS{PDF_IS_FRIENDS_OFF_ALL}`
+Flag: `HCS{PDF_IS_FRIENDS_OF_ALL}`
 
 ## Description
 PDeF dan XeMaiL adalah sahabat dan teman baik, walaupun keduanya berasal dari negara yang berbeda namun mereka bisa akrab karena keduanya menggunakan bahasa yang sama pada saat berinteraksi
@@ -39,6 +39,8 @@ Kita mendapatkan sebuah text, namun seperti nya ada yg aneh seperti ini dimana t
 Karena tidak mau menghabiskan waktu untuk mencari satu - satu, kita bisa melakukan scripting seperti ini untuk menemukan teks uppercase
 
 ```
+# PDF_IS_FRIENDS_OF_ALL
+
 text = '''
 in the taestry of life, a thread so true,
 friendshiP's bond emerges in vibrant hue.
@@ -68,7 +70,7 @@ it stands strong anD tall, never to fall.
 with empathy as its rootS and joy as its leaves,
 friendship's magic sOothes and relieves.
 in the gallery of memories, portraits bright,
-Friendship paints colors oF sheer delight.
+Friendship paints colors of sheer delight.
 
 distance may stretch its threads thin,
 but in the heart's canvas, it's woven in.
@@ -78,7 +80,7 @@ but friendship's melody cAn never be undone.
 so Let's raise a toast to bonds that bind,
 a treasure of the heart, one of a kind.
 through life's ebb and flow, hand in hand,
-friendship's symphony pLays, forever grand..
+friendship's symphony pLays, forever grand
 '''
 
 for char in text:
