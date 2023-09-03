@@ -5,7 +5,7 @@ def main():
             "format": "Apache/99.99"
         },
         { 
-            "question": "Disaat penyerang mencoba memasukkan beberapa credential pada website, sebutkan username dan hash dimana penyerang pertama kali berhasil login ke dalam website",
+            "question": "Disaat penyerang mencoba memasukkan beberapa credential pada website, sebutkan username dan hash dimana penyerang kedua kali berhasil login ke dalam website",
             "format": "budi:abcdefghjijklmnop12345678abcdefghjijklmnop12345678"
         },
         { 
@@ -19,7 +19,7 @@ def main():
     ]
 
     answers = [
-        "mailtrail/0.53",
+        "maltrail/0.53",
         "admin:56dd090935480e98650bc29cd0734ca2505f4106a315b223d9e6e2d9bc3edd73",
         "159.223.33.240:9999",
         "/tmp/.hmm.sh"
